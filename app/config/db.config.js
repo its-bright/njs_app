@@ -1,5 +1,5 @@
 module.exports = {
-  HOST: "localhost",
+  HOST: "njs-app-db.cqzb5eqc6o8t.us-east-1.rds.amazonaws.com",
   USER: "root",
   PASSWORD: "123456",
   DB: "testdb",
