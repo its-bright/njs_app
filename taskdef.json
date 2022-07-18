@@ -31,7 +31,16 @@
         "dnsServers": null,
         "mountPoints": [],
         "workingDirectory": null,
-        "secrets": null,
+        "secrets": [
+          {
+            "valueFrom": "arn:aws:secretsmanager:us-east-1:158303043761:secret:njs-app-db-secrets-JfDVvT",
+            "name": "DB_USERNAME"
+          },
+          {
+            "valueFrom": "arn:aws:secretsmanager:us-east-1:158303043761:secret:njs-app-db-secrets-JfDVvT",
+            "name": "DB_PASSWORD"
+          }
+        ],
         "dockerSecurityOptions": null,
         "memory": null,
         "memoryReservation": null,
@@ -95,6 +104,12 @@
         "targetId": null,
         "targetType": null,
         "value": null,
+        "name": "ecs.capability.secrets.asm.environment-variables"
+      },
+      {
+        "targetId": null,
+        "targetType": null,
+        "value": null,
         "name": "com.amazonaws.ecs.capability.task-iam-role"
       },
       {
@@ -123,7 +138,7 @@
     "networkMode": "awsvpc",
     "runtimePlatform": null,
     "cpu": "256",
-    "revision": 1,
+    "revision": 5,
     "status": "ACTIVE",
     "inferenceAccelerators": null,
     "proxyConfiguration": null,
