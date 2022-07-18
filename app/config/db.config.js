@@ -1,7 +1,7 @@
 module.exports = {
   HOST: "njs-app-db.cqzb5eqc6o8t.us-east-1.rds.amazonaws.com",
   USER: "root",
-  PASSWORD: "9876321",
+  PASSWORD: "98765321",
   DB: "testdb",
   dialect: "mysql",
   pool: {
