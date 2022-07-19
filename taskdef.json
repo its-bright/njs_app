@@ -1,6 +1,6 @@
 {
     "ipcMode": null,
-    "executionRoleArn": "arn:aws:iam::158303043761:role/Njs-ECS-Service-Role",
+    "executionRoleArn": "<your exe rle arn>",
     "containerDefinitions": [
       {
         "dnsSearchDomains": null,
@@ -33,11 +33,11 @@
         "workingDirectory": null,
         "secrets": [
           {
-            "valueFrom": "arn:aws:secretsmanager:us-east-1:158303043761:secret:njs-app-db-secrets-JfDVvT",
+            "valueFrom": "<your secret arn>",
             "name": "DB_USERNAME"
           },
           {
-            "valueFrom": "arn:aws:secretsmanager:us-east-1:158303043761:secret:njs-app-db-secrets-JfDVvT",
+            "valueFrom": "<your secret arn>",
             "name": "DB_PASSWORD"
           }
         ],
@@ -68,7 +68,7 @@
     ],
     "placementConstraints": [],
     "memory": "512",
-    "taskRoleArn": "arn:aws:iam::158303043761:role/Njs-ECS-Service-Role",
+    "taskRoleArn": "<Your role arn>",
     "compatibilities": [
       "EC2",
       "FARGATE"

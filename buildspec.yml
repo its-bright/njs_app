@@ -12,7 +12,7 @@ phases:
     commands:
       - echo logging into AWS ECR...
       - $(aws ecr get-login --no-include-email --region us-east-1)
-      - REPOSITORY_URI="158303043761.dkr.ecr.us-east-1.amazonaws.com/njs-app-repo"
+      - REPOSITORY_URI="<Your_account_id>.dkr.ecr.us-east-1.amazonaws.com/njs-app-repo"
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=${COMMIT_HASH:=latest}
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
